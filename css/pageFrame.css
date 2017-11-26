@@ -1,0 +1,36 @@
+* {
+    font-family:Consolas,Courier,"微软雅黑",serif;
+}
+#pageHeadBorder {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#pageBodyBorder {
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+}
+.pageHead {
+    text-align: center;
+    color: rgb(147,161,161);
+    padding: 10px;
+    margin: 0px 0px 10px 10px;
+    background-color: rgba(42,161,152,0.2);
+}
+.pageHead h1 {
+    font-size: 40px;
+}
+.pageBody {
+    color: rgb(187,178,178);
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    background-color: rgba(0,0,0,0.4);
+}

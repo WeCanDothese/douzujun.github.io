@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/pageFrame.css">
+		<link rel="stylesheet" type="text/css" href="css/blogFrame.css">
+		
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript">
+			
+			var fullHeight = function(){
+				$('.full_height').css('min-height', $(window).height());
+			}
+			
+			var sliderMain = function() {
+				$('.flexslider').flexslider({
+					animation: "fade",
+					slideshowSpeed: 5000,
+					directionNav: false/*
+					start: function(){
+						setTimeout(function(){
+							$('.slider-text').removeClass('animated fadeInUp');
+							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+						}, 500);
+					},
+					before: function(){
+						setTimeout(function(){
+							$('.slider-text').removeClass('animated fadeInUp');
+							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+						}, 500);
+					}*/
+	  			});
+			};
+			
+			var masonryMain=function(){
+				var $container = $('#masonry');
+        		$container.masonry({
+                	itemSelector: '.brick',
+	  				gutter:0,
+                	isAnimated: true,
+            	});
+			}
+			
+			var iframeWidth=function(){
+				$('.brick div iframe').css('width', $('.brick>div').width()+20);
+			}
+			
+			$(function(){
+				$(window).resize(fullHeight);
+				$(window).resize(iframeWidth);
+				fullHeight();
+				iframeWidth();
+				sliderMain();
+				masonryMain();
+			});
+		
+		</script>
+        <title>Douzi's Blog 1.0</title>
+    </head>
+	
+    <body>
+    	<script type="text/javascript" src="js/background.js"></script>
+		<div class="full_height" id="aside">
+			<h1 id="logo">Douzi</h1>
+			<nav class="nav1">
+				<ul  class="text">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#">Introduction</a></li>
+					<li><a href="http://www.cnblogs.com/douzujun/">Article</a></li>
+					<li><a href="#">Album</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="display">
+			<div class="full_height flexslider">
+				<ul class="slides">
+					<li class="full_height" style="background-image:url(images/bgslider-1.jpg)">
+			   		</li>
+					<li class="full_height" style="background-image:url(images/bgslider-2.jpg)">
+			   		</li>
+					<li class="full_height" style="background-image:url(images/bgslider-3.jpg)">
+			   		</li>
+		  		</ul>
+			</div>
+			
+			<div id="masonry">
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+  				
+				<div class="brick">
+					<div>
+						<div>
+							<div class="text">
+								<h2><a href="page/01 B.Titanic Data Science Solutions.html">01 B.scikit-learn Practice(二) Titanic Data Science Solutions-update</a></h2>
+								<p>— 这是一个数据挖掘实战的入门练习</p>
+								<p>— Use pandas for data manipulation</p>
+								<p>— Use matplotlib and seaborn for data visualization</p>
+								<p>— Learn to build models with scikit-learn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="music1">
+							<!--http://music.163.com/#/song?id=29822015-->
+							<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=411988502&auto=0&height=66"></iframe>
+						</div>
+					</div>
+				</div>
+  				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2>天涯过客</h2>
+							<p>晨霜攀黛瓦  抖落霜 冷了茶  </p> 
+							<p>抚琴欲对话  欲问琴声初落下</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--下面如上格式添加博客-->
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brick">
+					<div>
+						<div class="text">
+							<h2><a href="page/01 A.使用scikit-learn进行建模预测和评估操作 泰坦尼克号获救预测.html"> 01 A.scikit-learn Practice(一) Titanic Data Science Solutions</a></h2>
+							<p>— 这是一个数据挖掘实战的入门练习</p>
+							<p>— Use pandas for data manipulation</p>
+							<p>— Use matplotlib and seaborn for data visualization</p>
+							<p>— Learn to build models with scikit-learn</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+    </body>
+</html>
