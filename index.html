@@ -15,6 +15,8 @@
 		
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>			
+		<script type="text/javascript" src="js/jquery.bgslider.js"></script>
 		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 		<script type="text/javascript">
 			
@@ -26,19 +28,20 @@
 				$('.flexslider').flexslider({
 					animation: "fade",
 					slideshowSpeed: 5000,
-					directionNav: false/*
-					start: function(){
-						setTimeout(function(){
-							$('.slider-text').removeClass('animated fadeInUp');
-							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-						}, 500);
-					},
-					before: function(){
-						setTimeout(function(){
-							$('.slider-text').removeClass('animated fadeInUp');
-							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-						}, 500);
-					}*/
+					directionNav: false
+				
+//					start: function(){
+//						setTimeout(function(){
+//							$('.slider-text').removeClass('animated fadeInUp');
+//							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+//						}, 500);
+//					},
+//					before: function(){
+//						setTimeout(function(){
+//							$('.slider-text').removeClass('animated fadeInUp');
+//							$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+//						}, 500);
+//					}
 	  			});
 			};
 			
@@ -62,20 +65,34 @@
 				iframeWidth();
 				sliderMain();
 				masonryMain();
+				
+				$("#blog").bind("click", function() {
+					if($(".blog-list").is(":hidden")) {
+						$(".blog-list").show();
+					} else {
+						$(".blog-list").hide();
+					}
+				});
+				
 			});
-		
+			
 		</script>
-        <title>Douzi's Blog 1.0</title>
+        <title>Douzi's Blog</title>
     </head>
 	
     <body>
     	<script type="text/javascript" src="js/background.js"></script>
+    	<!--Menu-->
 		<div class="full_height" id="aside">
 			<h1 id="logo">Douzi</h1>
 			<nav class="nav1">
 				<ul  class="text">
 					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="#">Introduction</a></li>
+					<li id="blog"><a href="#">Blog</a>
+						<ul class="blog-list" hidden="hidden" style="font-size: 11px; margin: 20px;"><a href="#">&nbsp;&nbsp;•&nbsp;机器学习</a></ul>
+						<ul class="blog-list" hidden="hidden" style="font-size: 11px; margin: 20px;"><a href="#">&nbsp;&nbsp;•&nbsp;数据挖掘</a></ul>
+						<ul class="blog-list" hidden="hidden" style="font-size: 11px; margin: 20px;"><a href="#">&nbsp;&nbsp;•&nbsp;统计学习</a></ul>
+					</li>
 					<li><a href="http://www.cnblogs.com/douzujun/">Article</a></li>
 					<li><a href="#">Album</a></li>
 				</ul>
